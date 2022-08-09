@@ -53,7 +53,7 @@ class AccountDetail(APIView):
         return Response(serializer.data)
 
 class AllPostDetails(APIView):
-    permission_classes = (IsAuthenticated,)
+    # permission_classes = (IsAuthenticated,)
     def get(self, request):
         posts = Post.objects.all()
         serializer = PostSerializer(posts, many=True)
@@ -66,9 +66,9 @@ class PostCreate(APIView):
         account, token = JWTAuthentication().authenticate(request)
 
         # print(account)
-        # print(account.id)
-        # print(account.first_name)
-        # print(account.last_name)
+        # Post.created_by=token.payload['user_id']
+        Post.created_by=account
+        # print(token.payload['user_id'])
 
         serializer = PostSerializer(data=request.data)
 

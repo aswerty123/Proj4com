@@ -4,6 +4,7 @@ from .models import Account, Relationship, Post, Post_Comment, Post_like
 class AccountSerializer(serializers.ModelSerializer):
     class Meta:
         model = Account
+        # fields = ['id','email','first_name', 'last_name']
         fields = '__all__'
         # excludes = ['id',]
 
@@ -22,12 +23,17 @@ class PostSerializer(serializers.ModelSerializer):
     created_by = serializers.SlugRelatedField(
         # many=True,
         read_only=True,
-        slug_field= ('first_name')
+        slug_field= 'first_name'
         # slug_field= 'last_name'
      )
+    # account = AccountSerializer(
+    #     many =True,
+    #     read_only=True,
+    # )
     class Meta:
         model = Post
-        fields = '__all__'
+        fields = ['id','created_by','created_at', 'updated_at', 'post_content']
+        # fields = ('id','created_by','created_at', 'updated_at', 'post_content','account')
 
 class Post_CommentSerializer(serializers.ModelSerializer):
     class Meta:
