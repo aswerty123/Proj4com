@@ -6,6 +6,18 @@ class AccountSerializer(serializers.ModelSerializer):
         model = Account
         # fields = ['id','email','first_name', 'last_name']
         fields = '__all__'
+        excludes = 'password'
+
+    def validate_title(self, value):
+        if len(value)<5:
+            raise serializers.ValidationError('Title has to be at least 5 characters long')
+
+        return value
+class AccountGetSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Account
+        fields = ['id','email','first_name', 'last_name','image','is_admin']
+        # fields = '__all__'
         # excludes = ['id',]
 
     def validate_title(self, value):
@@ -20,22 +32,28 @@ class RelationshipSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class PostSerializer(serializers.ModelSerializer):
-    created_by = serializers.SlugRelatedField(
-        # many=True,
-        read_only=True,
-        slug_field= 'first_name'
-        # slug_field= 'last_name'
-     )
-    # account = AccountSerializer(
-    #     many =True,
-    #     read_only=True,
-    # )
+    # created_by=serializers.SlugRelatedField()
+    created_by=AccountGetSerializer() 
+
     class Meta:
         model = Post
-        fields = ['id','created_by','created_at', 'updated_at', 'post_content']
-        # fields = ('id','created_by','created_at', 'updated_at', 'post_content','account')
+        fields = ('id','created_by','created_at', 'updated_at', 'post_content')
+
+class PostCreateSerializer(serializers.ModelSerializer):
+    
+
+    class Meta:
+        model = Post
+        fields = ('id','created_by','created_at', 'updated_at', 'post_content')
+
 
 class Post_CommentSerializer(serializers.ModelSerializer):
+    created_by=AccountGetSerializer()
+    class Meta:
+        model = Post_Comment
+        fields = '__all__'
+
+class Post_CommentCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Post_Comment
         fields = '__all__'

@@ -4,6 +4,7 @@ from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 
 
 class AccountManager(BaseUserManager):
+
     def create_user(self, email, first_name, last_name, password=None):
         if not email:
             raise ValueError('User must have a valid email.')
@@ -42,7 +43,8 @@ class Account(AbstractBaseUser):
     last_name = models.CharField(max_length=50)
     phone_num = models.CharField(max_length=11, null=True)
     gender = models.CharField(max_length=7, null=True)
-    image = models.ImageField(null=True, default="avatar.svg")
+    # image = models.ImageField(null=True, default="avatar.svg")
+    image = models.CharField(max_length=255, null=True, default="https://freesvg.org/img/abstract-user-flat-4.png")
 
 
 
