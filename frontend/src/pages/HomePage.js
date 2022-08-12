@@ -5,8 +5,8 @@ import InputPost from "../components/HomePage/InputPost";
 
 import jwt_decode from "jwt-decode";
 
-import { useSelector, useDispatch } from "react-redux";
-import { proj4comActions } from "../store/proj4com";
+// import { useSelector, useDispatch } from "react-redux";
+// import { proj4comActions } from "../store/proj4com";
 import FriendList from "../components/HomePage/FriendList";
 import UserList from "../components/HomePage/UserList";
 
