@@ -93,6 +93,11 @@ Other User Profile Page (incomplete)
 
 
 
+## Reference
+
+Django + React jwt Token implementation by Dennis Ivy
+https://www.youtube.com/watch?v=xjMP0hspNLE
+
 
 
 
