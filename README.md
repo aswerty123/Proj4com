@@ -76,6 +76,10 @@ User have to input all of the fields for a successful registeration. then user w
 Home page consist of posts written by the users. New post will appear on top. users who is admin will have a blue glowing light beside their image.
 Post all have the image and name of the user who created the post followed by the content of the post then the created timestamp of the post and the number of comments in each post.
 
+At the Navbar, Profile will direct user to their own profile, while Home will direct the user back to the homepage and Logout will direct user back to the login page and logout user.
+
+At the Random User List, user can toggle to see 3 random users by pressing the refresh button and pressing the image to see user's profile. There are currently total 11 users in the web.
+
 ![image](https://user-images.githubusercontent.com/44399805/184562880-3c222b88-9ca3-4b74-aa99-efc8f2eb813b.png)
 
 ### Edited Post
