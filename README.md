@@ -54,7 +54,7 @@ Proceed to create React components which displays post information and comment b
 
 ## Proj4com Screenshots
 
-Login Page
+### Login Page
 
 Successful Login will help the user to stay login and explore different pages. 
 
@@ -65,13 +65,25 @@ Unsuccessful login, will bring out an alert and the user can only access the log
 ![image](https://user-images.githubusercontent.com/44399805/184563624-230123ee-98f2-4f09-bcaf-cefc2d83de14.png)
 
 
-Register Page
+### Register Page
+
+User have to input all of the fields for a successful registeration. then user will be directed to login page to login registered account.
 
 ![image](https://user-images.githubusercontent.com/44399805/184562816-3acbc446-5c89-418b-a540-5878794bdf3f.png)
 
-Home Page
+### Home Page
+
+Home page consist of posts written by the users. New post will appear on top. users who is admin will have a blue glowing light beside their image.
+Post all have the image and name of the user who created the post followed by the content of the post then the created timestamp of the post and the number of comments in each post.
 
 ![image](https://user-images.githubusercontent.com/44399805/184562880-3c222b88-9ca3-4b74-aa99-efc8f2eb813b.png)
+
+### Edited Post
+
+When post is edited, the position of post will remain by the timestamp of post will change to the updated timestamp with '(edited)'
+
+![image](https://user-images.githubusercontent.com/44399805/184564289-5f930794-d4cb-4cdf-b4e9-5fda19a37b11.png)
+
 
 First Post
 
