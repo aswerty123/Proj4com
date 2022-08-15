@@ -80,26 +80,31 @@ Post all have the image and name of the user who created the post followed by th
 
 ### Edited Post
 
-When post is edited, the position of post will remain by the timestamp of post will change to the updated timestamp with '(edited)'
+When post is edited, the position of post will remain but the timestamp of post will change to the updated timestamp with '(edited)'
 
 ![image](https://user-images.githubusercontent.com/44399805/184564289-5f930794-d4cb-4cdf-b4e9-5fda19a37b11.png)
 
+### First Post
 
-First Post
+The first post have 7 comments
 
 ![image](https://user-images.githubusercontent.com/44399805/184562908-4579a3a1-156a-4f09-a5a4-5c6c5260ecb3.png)
 
-First Post comment
+### First Post comment
+
+the comments is sorted by the oldest comments first. the user can scroll down to read all the comments.
 
 ![image](https://user-images.githubusercontent.com/44399805/184563239-330d498e-56b8-47ae-98cd-a91e0bddbf86.png)
 
+the newest user made the latest comment. the default imageis used by 'NewPerson LastName'.
+
 ![image](https://user-images.githubusercontent.com/44399805/184563249-bcf44619-1f91-4376-8028-0fcb424763cc.png)
 
-User Profile Page (incomplete)
+### User Profile Page (incomplete)
 
 ![image](https://user-images.githubusercontent.com/44399805/184563297-e2f50937-be64-465d-8d0d-218ff1dd2049.png)
 
-Other User Profile Page (incomplete)
+### Other User Profile Page (incomplete)
 
 ![image](https://user-images.githubusercontent.com/44399805/184563348-3b099386-bb54-41da-8810-8f24ebb3f6c0.png)
 
