@@ -56,7 +56,14 @@ Proceed to create React components which displays post information and comment b
 
 Login Page
 
+Successful Login will help the user to stay login and explore different pages. 
+
 ![image](https://user-images.githubusercontent.com/44399805/184562788-ccc88b26-7521-4302-a334-d3f6560e3139.png)
+
+Unsuccessful login, will bring out an alert and the user can only access the login and register page
+
+![image](https://user-images.githubusercontent.com/44399805/184563624-230123ee-98f2-4f09-bcaf-cefc2d83de14.png)
+
 
 Register Page
 
